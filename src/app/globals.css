@@ -1,48 +1,27 @@
 body {
-  background-color: black;
-  color: white;
-}
-
-ul {
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  font-size: larger;
-}
-
-li {
-  padding: 14px 11px;
-  text-decoration: none;
-}
-
-#navbar {
-  color: white;
-}
-
-#dock {
-  background-color: darkgray;
-  border-radius: 15px;
-  padding-inline: 100px;
-  width: 800px;
-  justify-content: center;
-  display: flex;
-  padding-left: 400px;
+  background-color: #181818;
+  color: #f4efef;
 }
 
 #name {
   font-weight: 700;
   font-size: 72px;
   margin-bottom: 0%;
-  margin-top: 200px;
+  margin-top: 250px;
   display: grid;
   max-width: 575px;
   position: relative;
   font-size: 5rem;
+  margin-left: 180px;
+  transition: color 0.2s;
+}
+#name:hover {
+  color: #181818;
 }
 #title {
   font-size: 25px;
   margin-top: 0.5%;
-  margin-left: 5px;
+  margin-left: 205px;
 }
 #name::before {
   transform: scaleX(0);
@@ -63,7 +42,7 @@ li {
   bottom: 0;
   left: 0;
   inset: 0 0 0 0;
-  background: hsl(314, 77%, 86%);
+  background: #f8bfd4;
   z-index: -1;
   transition: transform 0.3s ease;
 }
@@ -83,4 +62,160 @@ body {
 
 #desc {
   display: grid;
+  margin-left: 205px;
+}
+
+#contactTitle {
+  margin-bottom: 0%;
+  margin-top: 250px;
+  display: grid;
+  max-width: 425px;
+  position: relative;
+  font-size: 60px;
+  margin-left: 168px;
+  transition: color 0.2s;
+}
+
+#contactTitle:hover {
+  color: #181818;
+}
+
+#contactTitle::before {
+  transform: scaleX(0);
+  transform-origin: bottom right;
+}
+
+#contactTitle:hover::before {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+#contactTitle::before {
+  content: " ";
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  inset: 0 0 0 0;
+  background: #b6add8;
+  z-index: -1;
+  transition: transform 0.3s ease;
+}
+
+#projectText {
+  font-size: 60px;
+  margin-left: 180px;
+  transition: color 0.2s;
+}
+#projectText:hover {
+  color: #181818;
+}
+#projectText {
+  margin-bottom: 0%;
+  margin-top: 250px;
+  display: grid;
+  max-width: 300px;
+  position: relative;
+  font-size: 60px;
+  margin-left: 175px;
+}
+
+#projectText::before {
+  transform: scaleX(0);
+  transform-origin: bottom right;
+}
+
+#projectText:hover::before {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+#projectText::before {
+  content: " ";
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  inset: 0 0 0 0;
+  background: #a6ccd3;
+  z-index: -1;
+  transition: transform 0.3s ease;
+}
+
+#email {
+  font-size: 23px;
+  flex: 1;
+  margin-top: 83px;
+  margin-left: 20px;
+}
+
+#number {
+  font-size: 23px;
+  flex: 1;
+  margin-top: 83px;
+  margin-left: 20px;
+}
+
+#navs {
+  list-style: none;
+  margin-left: 1200px;
+  margin-top: 120px;
+  padding: none;
+  margin-bottom: 0px;
+  position: fixed;
+}
+
+.emailInfo {
+  display: flex;
+}
+
+.phoneInfo {
+  display: flex;
+}
+
+.buttons {
+  background: none;
+  border: none;
+  color: inherit;
+  font: inherit;
+  text-decoration: none;
+  cursor: pointer;
+  transition: color 0.2s, font-size 0.2s;
+  font-size: 20px;
+}
+
+.buttons:hover {
+  color: #f8bfd4;
+  font-size: 24px;
+}
+
+.linkedin {
+  font-size: 70px;
+}
+.githublogo {
+  font-size: 70px;
+}
+.phoneicon {
+  font-size: 70px;
+  margin-left: 200px;
+  margin-top: 60px;
+}
+.emailicon {
+  font-size: 70px;
+  margin-left: 200px;
+  margin-top: 60px;
+}
+.linkedin {
+  font-size: 70px;
+  margin-left: 200px;
+  margin-top: 60px;
+}
+.githublogo {
+  font-size: 70px;
+  margin-left: 200px;
+  margin-top: 60px;
 }

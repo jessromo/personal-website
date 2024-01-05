@@ -12,10 +12,8 @@ const HomePage = () => {
   return (
     <>
       <Nav />
-      <About />
-      <Dock />
-      <Projects />
-      <button onClick={() => setCount(count + 1)}>click meee {count}</button>
+
+     {/* <button onClick={() => setCount(count + 1)}>click meee {count}</button>*/}
     </>
   );
 };

@@ -10,10 +10,10 @@ const About = () => {
       <h1 id="name">Jessica Romo</h1>
       <p id="title">Frontend developer</p>
       <p id="desc">
-        React developer with a passion for creating user-focused web apps with
+       {/* React developer with a passion for creating user-focused web apps with
         clean,
         <br /> innovative solutions for engaging digital experiences.
-      </p>
+  */} small little description of me will go here</p>
     </>
   );
 };

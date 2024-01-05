@@ -1,46 +1,60 @@
 "use client";
-//import Link from "next/link";
-import { Element, scroller, Link } from "react-scroll";
-import Contact from "../contact/page";
-import Projects from "../projects/page";
+import Link from "next/link";
+import Contact from "./Contact";
+import Projects from "./Projects";
 import About from "./About";
-const Nav = () => {
-  const scrollToSection = (sectionId: string) => {
-    scroller.scrollTo(sectionId, {
-      duration: 800,
-      delay: 0,
-      smooth: "easeInOutQuart", // Smooth scrolling animation
-    });
-  };
+import { useRef } from "react";
 
-  const handleClick = () => {
-    scrollToSection("section1");
+const Nav: React.FC = () => {
+  const sectionRef1 = useRef<HTMLDivElement>(null);
+  const sectionRef2 = useRef<HTMLDivElement>(null);
+  const sectionRef3 = useRef<HTMLDivElement>(null);
+
+  const autoScroll = (ref: React.RefObject<HTMLDivElement> | null) => {
+    if (ref && ref.current) {
+      ref.current.scrollIntoView({ behavior: "smooth" });
+    }
   };
 
   return (
     <>
-      {/*} <nav id="navbar">
-        <ul>
-          <li>Home</li>
-          <li>
-            <Link href="../projects">Projects</Link>
-          </li>
-          <li>
-            <Link href="../contact">Contact</Link>
-          </li>
-        </ul>
-  </nav>*/}
       <div>
-        {/* Button to trigger scroll */}
-        <button onClick={handleClick}>Scroll to Section</button>
-
-        {/* Section you want to scroll to */}
-        <div id="section1">
-          
+        <div id="navbar">
+          {/* Buttons to scroll to different sections */}
+          <ul id="navs">
+            <li>
+              {" "}
+              <button
+                onClick={() => autoScroll(sectionRef1)}
+                className="buttons"
+              >
+                About
+              </button>
+            </li>
+            <li>
+              <button
+                onClick={() => autoScroll(sectionRef2)}
+                className="buttons"
+              >
+                Projects
+              </button>
+            </li>
+            <li>
+              <button
+                onClick={() => autoScroll(sectionRef3)}
+                className="buttons"
+              >
+                Contact
+              </button>
+            </li>
+          </ul>
         </div>
+        {/* Elements to scroll to */}
+        <div ref={sectionRef1}>{<About />}</div>
+        <div ref={sectionRef2}>{<Projects />}</div>
+        <div ref={sectionRef3}>{<Contact />}</div>
       </div>
     </>
   );
 };
-
 export default Nav;
