@@ -29,19 +29,21 @@ const Contact: React.FC = () => {
         <FaPhoneSquareAlt className="phoneicon" />
         <p id="number">817-896-9945</p>
       </div>
-      <a
-        href="https://github.com/Jessromo"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <FaSquareGithub
-          icon={FaSquareGithub}
-          className="githublogo"
-          onClick={handleGithubClick}
-        />
-      </a>
-
-      <div>
+      <div className="gitinfo">
+        <a
+          href="https://github.com/Jessromo"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <FaSquareGithub
+            icon={FaSquareGithub}
+            className="githublogo"
+            onClick={handleGithubClick}
+          />
+        </a>
+        <p id="gittext">You can check out my Github here!</p>
+      </div>
+      <div className="linkedinfo">
         <a
           href="https://www.linkedin.com/in/jessica-romo-607083273"
           target="_blank"
@@ -53,6 +55,7 @@ const Contact: React.FC = () => {
             onClick={handleLinkedinClick}
           />
         </a>
+        <p id="linkedtext"> You can visit my LinkedIn profile here!</p>
       </div>
     </>
   );

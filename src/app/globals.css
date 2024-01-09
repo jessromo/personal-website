@@ -160,6 +160,20 @@ body {
   margin-left: 20px;
 }
 
+#gittext {
+  font-size: 23px;
+  flex: 1;
+  margin-top: 83px;
+  margin-left: 20px;
+}
+
+#linkedtext {
+  font-size: 23px;
+  flex: 1;
+  margin-top: 83px;
+  margin-left: 20px;
+}
+
 #navs {
   list-style: none;
   margin-left: 1200px;
@@ -174,6 +188,14 @@ body {
 }
 
 .phoneInfo {
+  display: flex;
+}
+
+.gitinfo {
+  display: flex;
+}
+
+.linkedinfo {
   display: flex;
 }
 
@@ -213,11 +235,13 @@ body {
   font-size: 70px;
   margin-left: 200px;
   margin-top: 60px;
+  color: white;
 }
 .githublogo {
   font-size: 70px;
   margin-left: 200px;
   margin-top: 60px;
+  color: white;
 }
 
 .canvas {
@@ -225,5 +249,4 @@ body {
   top: 0;
   left: 0;
   z-index: -1;
- 
 }

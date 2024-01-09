@@ -22,7 +22,7 @@ const BackgroundAni: React.FC = () => {
     if (!ctx || !canvas) return;
 
     const balls: Ball[] = [];
-    const ballCount = 100;
+    const ballCount = 120;
     const maxDistance = 200;
     let mx = canvas.width / 2;
     let my = canvas.height / 2;
@@ -102,8 +102,6 @@ const BackgroundAni: React.FC = () => {
       });
     };
 
-    //mouse
-
     const interval = setInterval(drawMe, 1000 / 60);
 
     return () => clearInterval(interval);
@@ -120,7 +118,7 @@ const BackgroundAni: React.FC = () => {
       <canvas
         ref={canvasRef}
         className={"canvas"}
-        width={"1000px"}
+        width={"1500px"}
         height={"1000px"}
       />
     </>
