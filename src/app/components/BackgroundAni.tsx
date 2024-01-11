@@ -95,7 +95,7 @@ const BackgroundAni: React.FC = () => {
         ball.y += ball.moveY;
 
         ctx.beginPath();
-        ctx.fillStyle = `rbga(1, 0, 0, 1)`;
+        ctx.fillStyle = "black";
         ctx.arc(ball.x, ball.y, ball.radius, 0, Math.PI * 2, false);
         ctx.fill();
         ctx.closePath();
