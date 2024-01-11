@@ -23,7 +23,7 @@ const Contact: React.FC = () => {
       <h1 id="contactTitle">Get in touch!</h1>
       <div className="emailInfo">
         <MdEmail className="emailicon" />
-        <p id="email">JessiRomo06@gmail.com</p>
+        <p id="email">Jessiromo06@gmail.com</p>
       </div>
       <div className="phoneInfo">
         <FaPhoneSquareAlt className="phoneicon" />

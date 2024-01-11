@@ -7,16 +7,13 @@ import { BiLogoPostgresql } from "react-icons/bi";
 import { TiHtml5 } from "react-icons/ti";
 import { IoLogoCss3 } from "react-icons/io5";
 import { FaGitAlt } from "react-icons/fa";
-import { Carousel } from "react-responsive-carousel";
-import "react-responsive-carousel/lib/styles/carousel.min.css";
+
 
 const Dock = () => {
-  
   return (
     <>
-     <FaGit/>
-     <FaNode/>
-     
+      <FaGit />
+      <FaNode />
     </>
   );
 };
