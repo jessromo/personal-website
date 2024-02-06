@@ -3,6 +3,7 @@ import { useState, useEffect, useRef } from "react";
 import styles from "./page.module.css";
 
 import Link from "next/link";
+import HomePage from "./HomePage";
 
 interface Ball {
   x: number;
@@ -22,7 +23,7 @@ const BackgroundAni: React.FC = () => {
     if (!ctx || !canvas) return;
 
     const balls: Ball[] = [];
-    const ballCount = 120;
+    const ballCount = 90;
     const maxDistance = 200;
     let mx = canvas.width / 2;
     let my = canvas.height / 2;
@@ -31,31 +32,12 @@ const BackgroundAni: React.FC = () => {
       balls.push({
         x: Math.random() * canvas.width,
         y: Math.random() * canvas.height,
-        moveX: Math.random() * 2 - 0.7,
-        moveY: Math.random() * 2 - 0.7,
-        radius: 3,
+        moveX: (Math.random() * 2 - 0.5) * .5,
+        moveY: (Math.random() * 2 - 0.5) * .5,
+        radius: 1.5,
       });
     }
 
-    {
-      /*}
-    const p = {
-      x: 25,
-      y: 25,
-    };
-    const velocity = 3;
-    const startingAngle = 50;
-    const rad = 20;
-
-    let ball = {
-      x: p.x,
-      y: p.y,
-    };
-  
-    let moveX = Math.cos((Math.PI / 180) * startingAngle) * velocity;
-    let moveY = Math.sin((Math.PI / 180) * startingAngle) * velocity;
-  */
-    }
     const drawMe = () => {
       if (!ctx || !canvas) return;
 
@@ -72,7 +54,7 @@ const BackgroundAni: React.FC = () => {
 
           if (distance < 100) {
             ctx.beginPath();
-            ctx.lineWidth = 0.5;
+            ctx.lineWidth = 0.25;
             ctx.moveTo(ball.x, ball.y);
             ctx.lineTo(otherBall.x, otherBall.y);
             ctx.strokeStyle = `rgba(255, 255, 255, ${
@@ -95,12 +77,17 @@ const BackgroundAni: React.FC = () => {
         ball.y += ball.moveY;
 
         ctx.beginPath();
-        ctx.fillStyle = "black";
+        ctx.fillStyle = "white";
         ctx.arc(ball.x, ball.y, ball.radius, 0, Math.PI * 2, false);
         ctx.fill();
         ctx.closePath();
       });
     };
+
+
+
+
+  
 
     const interval = setInterval(drawMe, 1000 / 60);
 
@@ -117,7 +104,7 @@ const BackgroundAni: React.FC = () => {
     <>
       <canvas
         ref={canvasRef}
-        className={"canvas"}
+        className="animate__animated canvas"
         width={"1500px"}
         height={"1000px"}
       />
@@ -126,3 +113,9 @@ const BackgroundAni: React.FC = () => {
 };
 
 export default BackgroundAni;
+
+
+
+
+
+

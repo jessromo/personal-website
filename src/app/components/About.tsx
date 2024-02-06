@@ -12,44 +12,55 @@ import { BiLogoPostgresql } from "react-icons/bi";
 import { IoLogoCss3 } from "react-icons/io5";
 import { FaGitAlt } from "react-icons/fa";
 import { FaHtml5 } from "react-icons/fa";
+import "animate.css";
 
 const About = () => {
+ 
   return (
     <>
       <h1 id="name">Jessica Romo</h1>
-      <p id="title">Frontend developer</p>
+      <p id="title">Frontend Developer</p>
       <p id="desc">
         {/* React developer with a passion for creating user-focused web apps with
         clean,
         <br /> innovative solutions for engaging digital experiences.
   */}
-        small little description of me will go here
+        Self taught frontend developer
       </p>
       <div className="langs">
         <ul className="lang">
           <li>
-            <RiJavascriptFill />
+            <RiJavascriptFill
+              id="jsl"
+              class="animate__animated animate__fadeIn"
+            />
           </li>
           <li>
-            <BiLogoTypescript />
+            <BiLogoTypescript
+              id="tsl"
+              class="animate__animated animate__fadeIn"
+            />
           </li>
           <li>
-            <SiNextdotjs />
+            <SiNextdotjs id="njs" class="animate__animated animate__fadeIn" />
           </li>
           <li>
-            <FaHtml5 />
+            <FaHtml5 id="htmll" class="animate__animated animate__fadeIn" />
           </li>
           <li>
-            <IoLogoCss3 />
+            <IoLogoCss3 id="cssl" class="animate__animated animate__fadeIn" />
           </li>
           <li>
-            <BiLogoPostgresql />
+            <BiLogoPostgresql
+              id="pgl"
+              class="animate__animated animate__fadeIn"
+            />
           </li>
           <li>
-            <FaNodeJs />
+            <FaNodeJs id="njsl" class="animate__animated animate__fadeIn" />
           </li>
           <li>
-            <FaReact />
+            <FaReact id="rl" class="animate__animated animate__fadeIn" />
           </li>
         </ul>
       </div>

@@ -1,6 +1,8 @@
 body {
   background-color: #181818;
   color: #f4efef;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
 #name {
@@ -14,16 +16,16 @@ body {
   font-size: 5rem;
   margin-left: 180px;
   transition: color 0.2s;
-  font-family: "Varela Round";
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 #name:hover {
-  color: #181818;
+  color: #5a5a5a;
 }
 #title {
   font-size: 25px;
   margin-top: 0.5%;
   margin-left: 205px;
-  font-family: "Rubik";
 }
 #name::before {
   transform: scaleX(0);
@@ -44,7 +46,7 @@ body {
   bottom: 0;
   left: 0;
   inset: 0 0 0 0;
-  background: #f8bfd4;
+  background: #030637;
   z-index: -1;
   transition: transform 0.3s ease;
 }
@@ -54,7 +56,6 @@ body {
   min-inline-size: 100%;
   margin: 0;
   box-sizing: border-box;
-  font-family: "Rubik";
 }
 
 @media (orientation: landscape) {
@@ -66,7 +67,8 @@ body {
 #desc {
   display: grid;
   margin-left: 205px;
-  font-family: "Rubik";
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
 #contactTitle {
@@ -78,11 +80,12 @@ body {
   font-size: 60px;
   margin-left: 168px;
   transition: color 0.2s;
-  font-family: "Rubik";
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
 #contactTitle:hover {
-  color: #181818;
+  color: #5a5a5a;
 }
 
 #contactTitle::before {
@@ -104,7 +107,7 @@ body {
   bottom: 0;
   left: 0;
   inset: 0 0 0 0;
-  background: #b6add8;
+  background: #720455;
   z-index: -1;
   transition: transform 0.3s ease;
 }
@@ -113,10 +116,9 @@ body {
   font-size: 60px;
   margin-left: 180px;
   transition: color 0.2s;
-  font-family: "Rubik";
 }
 #projectText:hover {
-  color: #181818;
+  color: #5a5a5a;
 }
 #projectText {
   margin-bottom: 0%;
@@ -147,7 +149,7 @@ body {
   bottom: 0;
   left: 0;
   inset: 0 0 0 0;
-  background: #a6ccd3;
+  background: #3c0753;
   z-index: -1;
   transition: transform 0.3s ease;
 }
@@ -191,22 +193,18 @@ body {
 
 .emailInfo {
   display: flex;
-  font-family: "Rubik";
 }
 
 .phoneInfo {
   display: flex;
-  font-family: "Rubik";
 }
 
 .gitinfo {
   display: flex;
-  font-family: "Rubik";
 }
 
 .linkedinfo {
   display: flex;
-  font-family: "Rubik";
 }
 
 .langs {
@@ -223,30 +221,6 @@ body {
   font-size: 30px;
 }
 
-.buttons {
-  background: none;
-  border: none;
-  color: inherit;
-  font: inherit;
-  text-decoration: none;
-  cursor: pointer;
-  transition: color 0.2s, font-size 0.1s;
-  font-size: 20px;
-  font-family: "Rubik";
-}
-
-.buttons:hover {
-  color: #f8bfd4;
-  font-size: 24px;
-}
-
-.linkedin {
-  font-size: 70px;
-  font-family: "Rubik";
-}
-.githublogo {
-  font-size: 70px;
-}
 .phoneicon {
   font-size: 70px;
   margin-left: 200px;
@@ -262,23 +236,122 @@ body {
   margin-left: 200px;
   margin-top: 60px;
   color: white;
-  font-family: "Rubik";
+  transition: font-size 0.01s;
 }
+
+.linkedin:hover {
+  font-size: 75px;
+}
+
 .githublogo {
   font-size: 70px;
   margin-left: 200px;
   margin-top: 60px;
   color: white;
-  font-family: "Rubik";
 }
 
+.githublogo:hover {
+  font-size: 75px;
+  transition: font-size 0.01s;
+}
+
+#jsl {
+  animation-duration: 4s;
+  animation-delay: 0.1s;
+}
+#tsl {
+  animation-duration: 4s;
+  animation-delay: 0.2s;
+}
+#njs {
+  animation-duration: 4s;
+  animation-delay: 0.3s;
+}
+#htmll {
+  animation-duration: 4s;
+  animation-delay: 0.4s;
+}
+#cssl {
+  animation-duration: 4s;
+  animation-delay: 0.5s;
+}
+#pgl {
+  animation-duration: 4s;
+  animation-delay: 0.6s;
+}
+#njsl {
+  animation-duration: 4s;
+  animation-delay: 0.7s;
+}
+#rl {
+  animation-duration: 4s;
+  animation-delay: 0.8s;
+}
 .canvas {
   position: fixed; /* or absolute */
   top: 0;
   left: 0;
   z-index: -1;
+  animation-duration: 4s;
+  animation-delay: 0.1s;
 }
 
-/*@import url("https://fonts.googleapis.com/css2?family=Rubik&display=swap");
-*/
-@import url("https://fonts.googleapis.com/css2?family=Varela+Round&display=swap");
+/*.buttons {
+  background: none;
+  border: none;
+  color: inherit;
+  font: inherit;
+  text-decoration: none;
+  cursor: pointer;
+  transition: color 0.2s, font-size 0.1s;
+  font-size: 20px;
+}
+
+.buttons:hover {
+  color: #f8bfd4;
+  font-size: 24px;
+}*/
+
+.buttons {
+  background: none;
+  border: none;
+  color: inherit;
+  font: inherit;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 20px;
+
+  position: relative;
+
+  transition: color 0.2s;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.buttons:hover {
+  color: #181818;
+}
+
+.buttons::before {
+  transform: scaleX(0);
+  transform-origin: bottom right;
+}
+
+.buttons:hover::before {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.buttons::before {
+  content: " ";
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  inset: 0 0 0 0;
+  background: #910a67;
+  z-index: -1;
+  transition: transform 0.3s ease;
+}

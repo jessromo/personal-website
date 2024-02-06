@@ -4,6 +4,7 @@ import Contact from "./Contact";
 import Projects from "./Projects";
 import About from "./About";
 import { useRef } from "react";
+import BackgroundAni from "./BackgroundAni";
 
 const Nav: React.FC = () => {
   const sectionRef1 = useRef<HTMLDivElement>(null);
@@ -18,6 +19,7 @@ const Nav: React.FC = () => {
 
   return (
     <>
+      
       <div>
         <div id="navbar">
           {/* Buttons to scroll to different sections */}
